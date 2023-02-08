@@ -29,4 +29,12 @@ public class Guest {
     public boolean isVegan() {
         return isVegan;
     }
+
+    public void displayGuestInformation() {
+        System.out.println("Imię: " + name);
+        System.out.println("Preferowany posiłek: " + meal);
+        System.out.println("Numer telefonu: " + phoneNumber);
+        String isVeganString = isVegan ? "tak" : "nie";
+        System.out.println("Weganin? " + isVeganString);
+    }
 }
